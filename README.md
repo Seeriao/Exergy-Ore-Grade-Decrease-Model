@@ -12,7 +12,9 @@ Current work can be separated into 3 parts:
 2. Corresponding exergy burden added to the future generation due to the change in ore concentration
 3. Taking into account the concept of dissipation by considering the ratio between the dissipated resources versus the amount of extracted resources.
 
-### Part 1: Ore-grade decrease modelling
+![RoadMap](Ex_OGD/readme_img/RoadMap.png)
+
+### Step 1: Ore-grade decrease modelling
 Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). <br>
 $g=a-b\ln(T)$, <br>
 where a and b are constants that differ from mineral to mineral. 
@@ -49,10 +51,24 @@ Region 2 has the quickest ore-grade decline, with an almost steep linear relatio
 ##### Region 3
 Region 3 is the scenario where the ore grade has become really low and CMT is really high. This models very well the reality of the high effort that needs to be invested in order to get the same amount of 
 
-### Part 2: Connect ore-grade decrease with exergy
+##### Characterization Factor (CF) Development of Step 1
+$CF_1 = \frac{\partial g}{\partial CMT} = -\frac{A\beta e^{\alpha}}{CMT^2}(\frac{A}{CMT}-1)^{\beta-1}$ <br>
+
+* Possible challenge with this CF, because the curve is non-linear, therefore the CF is expected to change as the point of reference changes.
+
+### Step 2: Connect ore-grade decrease with exergy
 Given calculation of ERC in the framework of TheRy, we can calculate the small extra exergy by considering the starting mine concentration point x_m assumed in the paper of Magdalena and the change in ore grade computed in Part 1. 
 
 ![ERCvsSurplusExergy](/readme_img/ERCvsSurplusEx.drawio.png)
 
-### Part 3: Adding the concept of dissipation
-As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data, which is a difficult step to realize, because one needs to consider the annual data in 
+$b(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$ <br>
+$surplus exergy = \delta b = b(x_{m-future})-b(x_m)$ <br>
+
+$x_{m-future} = x_m - Mass_{extracted} * CF_1$ 
+
+### Step 3: Adding the concept of dissipation
+As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data, which is a difficult step to realize, because one needs to consider the entire annual data <br>
+
+$\% dissipated = \frac{mass dissipated}{mass extracted}$ <br>
+
+$Surplus exergy dissipated = 
