@@ -13,17 +13,17 @@ Current work can be separated into 3 parts:
 3. Taking into account the concept of dissipation by considering the ratio between the dissipated resources versus the amount of extracted resources.
 
 ### Part 1: Ore-grade decrease modelling
-Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). 
-$g=a-b\ln(T)$,
+Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). <br>
+$g=a-b\ln(T)$, <br>
 where a and b are constants that differ from mineral to mineral. 
 The choice of model was updated to the log-logistic distribution in the recent study by Vieira et al. 
 #### Original log-logistic distribution, F(x)
-$F(x)=\frac{1}{1+\frac{x}{a}^{-b}}$
+$F(x)=\frac{1}{1+(\frac{x}{a})^{-b}}$
 
 ![Log-Logistic Distribution Curve](readme_img/Log-LogisticDist.drawio.png)
 
 #### Adapted for distribution of ore-grade, H(g)
-$H(g)=1-F(g)=1-\frac{1}{1+\frac{x}{a}^{-b}}=\frac{1}{1+\frac{x}{a}^b}$ <br>
+$H(g)=1-F(g)=1-\frac{1}{1+(\frac{x}{a})^{-b}}=\frac{1}{1+(\frac{x}{a})^b}$ <br>
 It is expressed in this form in the paper of Vieira: <br>
 $H(g)=\frac{1}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$ <br>
 
@@ -34,7 +34,7 @@ $=e^{b\ln(\frac{x}{a})}$
 $=e^{b(\ln{x}-\ln{a})}$ <br>
 let $\alpha=\ln{a}$;
 let $\beta=\frac{1}{b}$ <br>
-$=\frac{1}{1+e^{\frac{\ln{g}-\alpha}{\beta}}}$ <br>
+$=e^{\frac{\ln{g}-\alpha}{\beta}}$ <br>
 
 To find the cumulative metal tonnage (CMT), we just have to multiply the ore-grade (g), with the ultimate amount of reserve (A): <br>
 $CMT=\frac{A}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$, <br>
