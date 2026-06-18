@@ -34,25 +34,23 @@ $=e^{b\ln(\frac{x}{a})}$
 $=e^{b(\ln{x}-\ln{a})}$ <br>
 let $\alpha=\ln{a}$;
 let $\beta=\frac{1}{b}$ <br>
-$=e^{\frac{\ln{g}-\alpha}{\beta}}$ <br>
+$=e^{\frac{\ln(g)-\alpha}{\beta}}$ <br>
 
 To find the cumulative metal tonnage (CMT), we just have to multiply the ore-grade (g), with the ultimate amount of reserve (A): <br>
 $CMT=\frac{A}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$, <br>
-here $\alpha$ represents the natural logarithm of the median ore grade, and $\beta$ is the scale parameter, which tells how spread out is the concentration data from the median, $e^{\alpha}$
+Here, $\alpha$ represents the natural logarithm of the median ore grade, and $\beta$ is the scale parameter, which tells how spread out is the concentration data from the median, $e^{\alpha}$. <br>
 This statistical model better captures the global ore-grade vs. tonnage data. 
 ![Ore Grade Decrease Representation](/readme_img/Ore-GradeDecrease.drawio.png)
 
 ##### Region 1
-
+Region 1 represents the early stage of mining, where most of the ores have high concentration. This is where the independent variable, g, is high, and the dependent variable, CMT, is relatively low. 
 ##### Region 2
+Region 2 has the quickest ore-grade decline, with an almost steep linear relationship between the ore-grade and the CMT. 
 ##### Region 3
+Region 3 is the scenario where the ore grade has become really low and CMT is really high. This models very well the reality of the high effort that needs to be invested in order to get the same amount of 
 
 ### Part 2: Connect ore-grade decrease with exergy
 Given calculation of ERC in the framework of TheRy, we can calculate the small extra exergy by considering the starting mine concentration point x_m assumed in the paper of Magdalena and the change in ore grade computed in Part 1. 
 
 ### Part 3: Adding the concept of dissipation
 As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data, which is a difficult step to realize, because one needs to consider the annual data in 
-
-
-
-
