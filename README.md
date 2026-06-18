@@ -34,7 +34,7 @@ $=e^{b\ln(\frac{x}{a})}$
 $=e^{b(\ln{x}-\ln{a})}$ <br>
 let $\alpha=\ln{a}$;
 let $\beta=\frac{1}{b}$ <br>
-$=e^{\frac{\ln(g)-\alpha}{\beta}}$ <br>
+We get:  $e^{\frac{\ln(g)-\alpha}{\beta}}$ <br>
 
 To find the cumulative metal tonnage (CMT), we just have to multiply the ore-grade (g), with the ultimate amount of reserve (A): <br>
 $CMT=\frac{A}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$, <br>
@@ -51,6 +51,8 @@ Region 3 is the scenario where the ore grade has become really low and CMT is re
 
 ### Part 2: Connect ore-grade decrease with exergy
 Given calculation of ERC in the framework of TheRy, we can calculate the small extra exergy by considering the starting mine concentration point x_m assumed in the paper of Magdalena and the change in ore grade computed in Part 1. 
+
+![ERCvsSurplusExergy](Ex_OGD/readme_img/ERCvsSurplusEx.drawio.png)
 
 ### Part 3: Adding the concept of dissipation
 As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data, which is a difficult step to realize, because one needs to consider the annual data in 
