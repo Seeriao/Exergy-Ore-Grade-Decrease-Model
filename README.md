@@ -12,7 +12,7 @@ Current work can be separated into 3 parts:
 2. Corresponding exergy burden added to the future generation due to the change in ore concentration
 3. Taking into account the concept of dissipation by considering the ratio between the dissipated resources versus the amount of extracted resources.
 
-![RoadMap](Ex_OGD/readme_img/RoadMap.png)
+![RoadMap](/readme_img/RoadMap.png)
 
 ### Step 1: Ore-grade decrease modelling
 Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). <br>
