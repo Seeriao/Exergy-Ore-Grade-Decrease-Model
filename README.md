@@ -28,11 +28,11 @@ It is expressed in this form in the paper of Vieira: <br>
 $H(g)=\frac{1}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$ <br>
 
 ##### Derivation 
-$\frac{x}{a}^b$ <br>
+$\frac{x}{a}^b$
 $=e^{\ln(\frac{x}{a})^b}$
 $=e^{b\ln(\frac{x}{a})}$
 $=e^{b(\ln{x}-\ln{a})}$ <br>
-let $\alpha=\ln{a}$ <br>
+let $\alpha=\ln{a}$;
 let $\beta=\frac{1}{b}$ <br>
 $=\frac{1}{1+e^{\frac{\ln{g}-\alpha}{\beta}}}$ <br>
 
