@@ -17,7 +17,7 @@ Current work can be separated into 3 parts:
 ### Step 1: Ore-grade decrease modelling
 Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). <br>
 $g=a-b\ln(T)$, <br>
-where a and b are constants that differ from mineral to mineral. 
+where a and b are constants that differ from mineral to mineral. <br>
 The choice of model was updated to the log-logistic distribution in the recent study by Vieira et al. 
 #### Original log-logistic distribution, F(x)
 $F(x)=\frac{1}{1+(\frac{x}{a})^{-b}}$
@@ -62,7 +62,7 @@ Given calculation of ERC in the framework of TheRy, we can calculate the small e
 ![ERCvsSurplusExergy](/readme_img/ERCvsSurplusEx.drawio.png)
 
 $b(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$ <br>
-$surplus exergy = \delta b = b(x_{m-future})-b(x_m)$ <br>
+$surplus exergy = \Delta b = b(x_{m-future})-b(x_m)$ <br>
 
 $x_{m-future} = x_m - Mass_{extracted} * CF_1$ 
 
@@ -71,4 +71,4 @@ As of now, the dissipation is thought to be modelled using yearly dissipation da
 
 $\% dissipated = \frac{mass dissipated}{mass extracted}$ <br>
 
-$Surplus exergy dissipated = 
+$Surplus exergy dissipated = $
