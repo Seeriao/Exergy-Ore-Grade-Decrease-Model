@@ -29,15 +29,15 @@ $H(g)=\frac{1}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$ <br>
 
 ##### Derivation 
 $\frac{x}{a}^b$ <br>
-$=e^{\ln(\frac{x}{a}^b)}$ <br>
-$=e^{b\ln(\frac{x}{a})}$ <br>
-$=e^{b(\ln(x)-\ln(a))}$ <br>
-let $\alpha=\ln(a)$ <br>
+$=e^{\ln(\frac{x}{a})^b}$
+$=e^{b\ln(\frac{x}{a})}$
+$=e^{b(\ln{x}-\ln{a})}$ <br>
+let $\alpha=\ln{a}$ <br>
 let $\beta=\frac{1}{b}$ <br>
-$=\frac{1}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$ <br>
+$=\frac{1}{1+e^{\frac{\ln{g}-\alpha}{\beta}}}$ <br>
 
-To find the cumulative metal tonnage (CMT), we just have to multiply the ore-grade (g), with the ultimate amount of reserve (A):
-$CMT=\frac{A}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$, 
+To find the cumulative metal tonnage (CMT), we just have to multiply the ore-grade (g), with the ultimate amount of reserve (A): <br>
+$CMT=\frac{A}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$, <br>
 here $\alpha$ represents the natural logarithm of the median ore grade, and $\beta$ is the scale parameter, which tells how spread out is the concentration data from the median, $e^{\alpha}$
 This statistical model better captures the global ore-grade vs. tonnage data. 
 ![Ore Grade Decrease Representation](/readme_img/Ore-GradeDecrease.drawio.png)
