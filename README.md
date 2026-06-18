@@ -19,7 +19,7 @@ where a and b are constants that differ from mineral to mineral.
 The choice of model was updated to the log-logistic distribution in the recent study by Vieira et al. 
 #### Original log-logistic distribution
 $F(x)=\frac{1}{1+\frac{x}{a}^{-b}}$
-[Log-Logistic Distribution Curve](readme_img/Log-LogisticDist.drawio.png)
+![Log-Logistic Distribution Curve](readme_img/Log-LogisticDist.drawio.png)
 To describe the distribution of ore-grade (g):
 $H(g)=1-F(g)=1-\frac{1}{1+\frac{x}{a}^{-b}}=\frac{1}{1+\frac{x}{a}^b}$
 It is expressed in this form in the paper of Vieira:
@@ -28,7 +28,7 @@ To find the cumulative metal tonnage (CMT), we just have to multiply the ore-gra
 $CMT=\frac{A}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$, 
 here $\alpha$ represents the natural logarithm of the median ore grade, and $\beta$ is the scale parameter, which tells how spread out is the concentration data from the median, $e^{\alpha}$
 This statistical model better captures the global ore-grade vs. tonnage data. 
-[Ore Grade Decrease Representation](/readme_img/Ore-GradeDecrease.drawio.png)
+![Ore Grade Decrease Representation](/readme_img/Ore-GradeDecrease.drawio.png)
 
 Part 2: Connect ore-grade decrease with exergy
 Given calculation of ERC in the framework of TheRy, we can calculate the small extra exergy by considering the starting mine concentration point x_m assumed in the paper of Magdalena and the change in ore grade computed in Part 1. 
