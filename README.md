@@ -76,21 +76,14 @@ Given calculation of ERC in the framework of TheRy, we can calculate the small e
 
 ![ERCvsSurplusExergy](/readme_img/ERCvsSurplusEx.drawio.png)
 
-$b_c(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$ 
-$\text{Change in Concentration Exergy}= \Delta b_c = CF_2 = b_c(x_{m_{future}})-b_c(x_m)$ 
+$b_c(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$ <br>
+$\text{Change in Concentration Exergy} = \Delta b_c = CF_2 = b_c(x_{m_{future}})-b_c(x_m)$ <br>
 
 $x_{m_{future}} = x_m - CF_1 \times \text{Mass}_{\text{extracted}}$ 
 
 ### Step 3: Finding the ore-grade decrease due to extraction and dissipation
 As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data.
 
-$\text{score}_{\text{total}}=CF_2 \times \text{Mass}_{\text{extracted}}$
+$\text{score}_{\text{total}} = CF_2 \times \text{Mass}_{\text{extracted}}$ 
 
-$\text{score}_{\text{dissipative}}=CF_2 \times \text{Mass}_{\text{disspated}}$
-
-### Step 3: Finding the ore-grade decrease due to extraction and dissipation
-As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data.
-
-$\text{score}_{\text{total}} = \text{CF}_2 \times \text{Mass}_{\text{extracted}}$
-
-$\text{score}_{\text{dissipative}} = \text{CF}_2 \times \text{Mass}_{\text{dissipated}}$
+$\text{score}_{\text{dissipative}}=CF_2 \times \text{Mass}_{\text{disspated}}$ 
