@@ -87,3 +87,10 @@ As of now, the dissipation is thought to be modelled using yearly dissipation da
 $\text{score}_{\text{total}}=CF_2 \times \text{Mass}_{\text{extracted}}$
 
 $\text{score}_{\text{dissipative}}=CF_2 \times \text{Mass}_{\text{disspated}}$
+
+### Step 3: Finding the ore-grade decrease due to extraction and dissipation
+As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data.
+
+$\text{score}_{\text{total}} = \text{CF}_2 \times \text{Mass}_{\text{extracted}}$
+
+$\text{score}_{\text{dissipative}} = \text{CF}_2 \times \text{Mass}_{\text{dissipated}}$
