@@ -84,5 +84,6 @@ $x_{m_{future}} = x_m - CF_1 * \text{Mass}_{\text{extracted}}$
 ### Step 3: Finding the ore-grade decrease due to extraction and dissipation
 As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data. <br>
 
-$\text{score}_{\text{total}}=CF_2*\text{Mass}_{\text{extracted}}$
-$\text{score}_{\text{dissipative}}=CF_2*\text{Mass}_{\text{disspated}}$
+$\text{score}_{\text{total}}=CF_2 \times \text{Mass}_{\text{extracted}}$
+
+$\text{score}_{\text{dissipative}}=CF_2 \times \text{Mass}_{\text{disspated}}$
