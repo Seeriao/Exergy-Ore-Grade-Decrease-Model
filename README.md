@@ -46,11 +46,11 @@ $$H(g)=\frac{1}{1+e^{\frac{\ln(g)-\alpha}{\beta}}}$$ <br>
 
 ##### Derivation 
 $$\frac{x}{a}^b$
-$=e^{\ln(\frac{x}{a})^b}$
-$=e^{b\ln(\frac{x}{a})}$
-$=e^{b(\ln{x}-\ln{a})}$$ <br>
-$$ \text{let} \alpha=\ln{a}$$;
-$$ \text{let} \beta=\frac{1}{b}$$ <br>
+=e^{\ln(\frac{x}{a})^b}
+=e^{b\ln(\frac{x}{a})}
+=e^{b(\ln{x}-\ln{a})}$$ <br>
+$$ \text{let} \space \alpha=\ln{a}$$
+$$ \text{let} \space \beta=\frac{1}{b}$$ <br>
 We get:  $$e^{\frac{\ln(g)-\alpha}{\beta}}$$ <br>
 
 To find the cumulative metal tonnage (CMT), we just have to multiply the ore-grade (g), with the ultimate amount of reserve (A): <br>
