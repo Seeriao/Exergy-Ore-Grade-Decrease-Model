@@ -4,7 +4,7 @@
 This work started by investigating the possibility of measuring the dissipation in LCA using exergy, specifically with the idea of thermodynamic rarity (TheRy), a concept developed by Antonio Valero and Alicia Valero. However, the TheRy model assumes all the dissipated resources go immediately to a concentration of the dead state seeing it in a very long time horizon. This is makes it difficult to quantify the short term impact of the life cycle of a product on the aspect of resource use accurately. 
 
 
-Therefore, the new attempt is to describe the impact of gradual resource dissipation of a product system in terms of exergy. To demonstrate the gradual resource dissipation process, the idea of ore-grade decrease is incorporated. The mathematical equation used to calculated the ERC in the previous work can be applied here to develop characterization factor (CF) for a smaller variation of ore grade. 
+Therefore, the new attempt is to describe the impact of gradual resource dissipation of a product system in terms of exergy. To demonstrate the gradual resource dissipation process, the idea of ore-grade decrease is incorporated. The mathematical equation used to calculated the ERC in the previous work can be applied here to develop characterization factor (CF) for a smaller variation of the ore grade. 
 
 ## Outline
 Current work can be separated into 3 parts:
@@ -18,6 +18,15 @@ The image above illustrates clearly the impact pathway of the target indicator. 
 * Retention represents the amount needed to replenish the dissipated resources from the technosphere. 
 * Expansion refers to the extra amount that needs to be mined to for the development of the society. <br>
 Take note that this indicator will only measure the future burden in terms of exergy for the retention part of the mining activity. Plus, an assumption made here is that the dissipated material will be replaced with the same material during the next life cycle, which means no alternative is considered. 
+
+## 3-step LCIA Process
+In brief, the 3-step LCIA calculation includes
+1. Find the ore-grade decrease ($\Delta g$) that corresponds to the extraction flow in LCI.
+    * unit: mass of metal / mass of ore
+2. Find the change in the concentration exergy ($\Delta b_c$) due to the ore-grade decrease ($\Delta g$). This will be the impact factor of the specific element.
+    * unit: kJ/kg or MJ/kg
+3. There can be 2 final impact scores: multiply the **extraction flows** by the CF from Step#2, we get the overall ore-grade decline caused by the product system; or multiply the **dissipation flows** by the CF from Step#2, we find the amount of ore-grade decline that the dissipative flows are responsible for. 
+    * unit: kJ or MJ
 
 ### Step 1: Ore-grade decrease modelling
 Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). <br>
@@ -59,21 +68,20 @@ Region 3 is the scenario where the ore grade has become really low and CMT is re
 ##### Characterization Factor (CF) Development of Step 1
 $CF_1 = \frac{\partial g}{\partial CMT} = -\frac{A\beta e^{\alpha}}{CMT^2}(\frac{A}{CMT}-1)^{\beta-1}$ <br>
 
-<span style="color: red;">Possible challenge with this CF, because the curve is non-linear, therefore the CF is expected to change as the point of reference changes.</span>
+<font color="red">Possible challenge with this $CF_1$, because the curve is non-linear, therefore the CF is expected to change as the point of reference changes.</font>
 
 ### Step 2: Connect ore-grade decrease with exergy
 Given calculation of ERC in the framework of TheRy, we can calculate the small extra exergy by considering the starting mine concentration point x_m assumed in the paper of Magdalena and the change in ore grade computed in Part 1. 
 
 ![ERCvsSurplusExergy](/readme_img/ERCvsSurplusEx.drawio.png)
 
-$b(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$ <br>
-$surplus exergy = \Delta b = b(x_{m-future})-b(x_m)$ <br>
+$b_c(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$ <br>
+$Change \space in \space Concentration \space Exergy = \Delta b_c = CF_2 = b_c(x_{m_{future}})-b_c(x_m)$ <br>
 
-$x_{m-future} = x_m - Mass_{extracted} * CF_1$ 
+$x_{m_{future}} = x_m - CF_1 * Mass_{extracted}$ 
 
-### Step 3: Adding the concept of dissipation
-As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data, which is a difficult step to realize, because one needs to consider the entire annual data <br>
+### Step 3: Finding the ore-grade decrease due to extraction and dissipation
+As of now, the dissipation is thought to be modelled using yearly dissipation data/yearly extraction data. <br>
 
-$\% dissipated = \frac{mass dissipated}{mass extracted}$ <br>
-
-$Surplus exergy dissipated = $
+$score_{total}=CF_2*Mass_{extracted}$ <br>
+$score_{dissipative}=CF_2*Mass_{disspated}$
