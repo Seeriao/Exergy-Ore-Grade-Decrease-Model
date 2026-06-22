@@ -12,7 +12,12 @@ Current work can be separated into 3 parts:
 2. Corresponding exergy burden added to the future generation due to the change in ore concentration
 3. Taking into account the concept of dissipation by considering the ratio between the dissipated resources versus the amount of extracted resources.
 
-![RoadMap](/readme_img/RoadMap.png)
+![RoadMap](/readme_img/Impact-Pathway.png) <br>
+
+The image above illustrates clearly the impact pathway of the target indicator. In order to capture accurately the consequence of mineral dissipation on the reduction of ore-grade, the two driven forces of the mining activity are identified, namely retention and expansion. 
+* Retention represents the amount needed to replenish the dissipated resources from the technosphere. 
+* Expansion refers to the extra amount that needs to be mined to for the development of the society. <br>
+Take note that this indicator will only measure the future burden in terms of exergy for the retention part of the mining activity. Plus, an assumption made here is that the dissipated material will be replaced with the same material during the next life cycle, which means no alternative is considered. 
 
 ### Step 1: Ore-grade decrease modelling
 Originally, ore-grade decrease was modelled with the Lasky’s relationship that connects the ore-grade (g) and the tonnage of rocks mined (T). <br>
@@ -54,7 +59,7 @@ Region 3 is the scenario where the ore grade has become really low and CMT is re
 ##### Characterization Factor (CF) Development of Step 1
 $CF_1 = \frac{\partial g}{\partial CMT} = -\frac{A\beta e^{\alpha}}{CMT^2}(\frac{A}{CMT}-1)^{\beta-1}$ <br>
 
-* Possible challenge with this CF, because the curve is non-linear, therefore the CF is expected to change as the point of reference changes.
+<span style="color: red;">Possible challenge with this CF, because the curve is non-linear, therefore the CF is expected to change as the point of reference changes.</span>
 
 ### Step 2: Connect ore-grade decrease with exergy
 Given calculation of ERC in the framework of TheRy, we can calculate the small extra exergy by considering the starting mine concentration point x_m assumed in the paper of Magdalena and the change in ore grade computed in Part 1. 
