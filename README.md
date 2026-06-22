@@ -81,9 +81,6 @@ $\text{Change in Concentration Exergy} = \Delta b_c = CF_2 = b_c(x_{m_{future}})
 $x_{m_{future}} = x_m - CF_1 \times \text{Mass}_{\text{extracted}}$ 
 
 ### Step 3: Finding the ore-grade decrease due to extraction and dissipation
-
 As of now, the dissipation is thought to be modelled using the yearly dissipation data per year of the extraction data.
-
 $\text{score}_{\text{total}} = \text{CF}_2 \times \text{Mass}_{\text{extracted}}$
-
 $\text{score}_{\text{dissipative}} = \text{CF}_2 \times \text{Mass}_{\text{dissipated}}$
