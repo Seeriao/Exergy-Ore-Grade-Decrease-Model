@@ -1,0 +1,13 @@
+# --- Python stuff ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# --- VS Code stuff ---
+.vscode/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
