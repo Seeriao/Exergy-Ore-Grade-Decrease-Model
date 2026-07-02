@@ -77,7 +77,7 @@ Given calculation of ERC in the framework of TheRy, we can calculate the small e
 ![ERCvsSurplusExergy](/readme_img/ERCvsSurplusEx.drawio.png)
 
 $$b_c(x)=-RTº[\ln(x)+\frac{1-x}{x}\ln(1-x)]$$ <br>
-$$\text{Change in Concentration Exergy} = \Delta b_c = CF_2 = b_c(x_{m_{future}})-b_c(x_m)$$ <br>
+$$\text{Change in Concentration Exergy} = \Delta b_c = **CF_2** = b_c(x_{m_{future}})-b_c(x_m)$$ <br>
 $$x_{m_{future}} = x_m - CF_1 \times \text{Mass}_{\text{extracted}}$$
 
 ### Step 3: Finding the ore-grade decrease due to extraction and dissipation
