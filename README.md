@@ -1,7 +1,7 @@
 # Exergy - Ore Grade Decrease Modeling
 
 ## Background
-This work started by investigating the possibility of measuring the dissipation in LCA using exergy, specifically with the idea of thermodynamic rarity (TheRy), a concept developed by Antonio Valero and Alicia Valero. However, the TheRy model assumes all the dissipated resources go immediately to a concentration of the dead state seeing it in a very long time horizon. This is makes it difficult to quantify the short term impact of the life cycle of a product on the aspect of resource use accurately. 
+This work started by investigating the possibility of measuring the dissipation in LCA using exergy, specifically with the idea of thermodynamic rarity (TheRy), a concept developed by Antonio Valero and Alicia Valero. However, the TheRy model assumes all the dissipated resources go immediately to a concentration of the dead state, which is assumed to take place in a very long time horizon. This is makes it difficult to quantify the short term impact of the life cycle of a product on the aspect of resource use accurately. 
 
 
 Therefore, the new attempt is to describe the impact of gradual resource dissipation of a product system in terms of exergy. To demonstrate the gradual resource dissipation process, the idea of ore-grade decrease is incorporated. The mathematical equation used to calculated the ERC in the previous work can be applied here to develop characterization factor (CF) for a smaller variation of the ore grade. 
