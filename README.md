@@ -6,6 +6,10 @@ This work started by investigating the possibility of measuring the dissipation 
 
 Therefore, the new attempt is to describe the impact of gradual resource dissipation of a product system in terms of exergy. To demonstrate the gradual resource dissipation process, the idea of ore-grade decrease is incorporated. The mathematical equation used to calculated the ERC in the previous work can be applied here to develop characterization factor (CF) for a smaller variation of the ore grade. 
 
+## Setup
+The entire LCIA process in this repository runs on [BrightWay2.5](https://learn.brightway.dev/en/latest/content/chapters/BW25/BW25_introduction.html). Check their documentation on how to install the package. <br>
+Other libraries to be downloaded: `pubchempy`,`mendeleev`
+
 ## Outline
 Current work can be separated into 3 parts:
 1. Modelling ore-grade decrease: this describes the relationship between the ore-grade and the amount of ore that is extracted (also called tonnage)
