@@ -16,7 +16,7 @@ Current work can be separated into 3 parts:
 2. Corresponding exergy burden added to the future generation due to the change in ore concentration
 3. Taking into account the concept of dissipation by considering the ratio between the dissipated resources versus the amount of extracted resources.
 
-![Impact Pathway](/readme_img/Impact-Pathway.png) <br>
+![Impact Pathway](/readme_img/Impact-Pathway.png?raw=true&v=2) <br>
 
 The image above illustrates clearly the impact pathway of the target indicator. In order to capture accurately the consequence of mineral dissipation on the reduction of ore-grade, the two driven forces of the mining activity are identified, namely retention and expansion. 
 * Retention represents the amount needed to replenish the dissipated resources from the technosphere. 
