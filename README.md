@@ -28,7 +28,7 @@ Take note that this indicator will only measure the future burden in terms of ex
 In brief, the 3-step LCIA calculation includes
 1. Find the ore-grade decrease ($\Delta g$) that corresponds to the extraction flow in LCI.
     * unit: mass of metal / mass of ore
-2. Find the change in the concentration exergy ($\Delta b_c$) due to the ore-grade decrease ($\Delta g$). This will be the impact factor of the specific element.
+2. Find the change in the ERC ($k\Delta b_c$) due to the ore-grade decrease ($\Delta g$). This will be the impact factor of the specific element.
     * unit: kJ/kg or MJ/kg
 3. There can be 2 final impact scores: multiply the **extraction flows** by the CF from Step#2, we get the overall ore-grade decline caused by the product system; or multiply the **dissipation flows** by the CF from Step#2, we find the amount of ore-grade decline that the dissipative flows are responsible for. 
     * unit: kJ or MJ
